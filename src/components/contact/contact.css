@@ -1,0 +1,81 @@
+.contacts {
+    padding: 0 3rem;
+    display: flex;
+    height: 30rem;
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.contacts .contact-leftside .awesome .contact-head1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.contacts .contact-leftside .awesome .contact-head2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.contacts .contact-rightside {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.contacts .contact-rightside form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contacts .contact-rightside form .user {
+    width: 20rem;
+    height: 2rem;
+    padding: 0.3rem;
+    outline: none;
+    border: 2px solid var(--orange);
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.contact-rightside form textarea {
+    height: 4rem !important;
+}
+
+
+@media screen and (max-width: 540px) {
+    .contacts {
+        flex-direction: column;
+        align-items: center;
+        height: 50rem;
+        padding: 0;
+    }
+
+    .contacts .contact-rightside form {
+        margin-top: 3rem;
+    }
+
+    .contacts .contact-rightside form .user {
+        width: 12rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contacts {
+        flex-direction: column;
+        align-items: center;
+        height: 50rem;
+        padding: 0;
+    }
+
+    .contacts .contact-rightside form {
+        margin-top: 3rem;
+    }
+
+    .contacts .contact-rightside form .user {
+        width: 12rem;
+    }
+}

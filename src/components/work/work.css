@@ -1,0 +1,125 @@
+.works{
+    height: 30rem;
+    width: 100%;
+    padding: 0 3rem;
+    margin-top: 4rem;
+    display: flex;
+}
+
+.works .work-rightside{
+    position: relative;
+}
+
+.works .work-rightside .work-mainCircle{
+    position: relative;
+    top: 2rem;
+    left: 9rem;
+    width: 18rem;
+    height: 18rem;
+    background: white;
+    border-radius: 100%;
+    box-shadow: 1px 1px 17px 2px #000;
+}
+
+.works .work-mainCircle .work-smallCircle{
+    position: absolute;
+    border-radius: 100%;
+    width: 6rem;
+    height: 6rem;
+    border: 5px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    box-shadow: var(--smboxShadow);
+}
+
+.work-smallCircle img{
+    transform: scale(0.6);
+}
+
+.works .work-mainCircle .circle1{
+    top: -3rem;
+    left: 6rem;
+}
+
+.works .work-mainCircle .circle2{
+    top: 5rem;
+    left: -3rem;
+}
+
+.works .work-mainCircle .circle3{
+    top: 5rem;
+    left: 6rem;
+}
+
+.works .work-mainCircle .circle4{
+    top: 5rem;
+    left: 15rem;
+}
+
+.works .work-mainCircle .circle5{
+    top: 13rem;
+    left: 6rem;
+}
+
+@media screen and (max-width: 912px){
+    .works {
+        height: 40rem;
+        width: 100%;
+        padding: 0;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .works {
+        height: 40rem;
+        width: 100%;
+        padding: 0;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .works {
+        height: 45rem;
+        width: 100%;
+        padding: 0;
+        display: block;
+    }
+
+    .works .work-rightside .work-mainCircle {
+        position: static;
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .works{
+        height: 56rem;
+        width: 100%;
+        padding: 0;
+        /* margin-top: 4rem; */
+        gap: 5rem;
+        flex-direction: column;
+    }
+
+    .works .work-rightside{
+        display: flex;
+        align-items: self-start;
+        justify-content: start;
+        transform: scale(0.7);
+    }
+
+    .works .work-rightside .work-mainCircle{
+        position: static;
+    }
+}
+
+@media screen and (max-width: 375px){
+  
+    .works .work-rightside{
+        transform: scale(0.5);
+    }
+}

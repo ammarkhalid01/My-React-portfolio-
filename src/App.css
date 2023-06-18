@@ -1,0 +1,40 @@
+:root
+{
+    /* --orange : #fdc50f; */
+    --orange : #9f4050;
+    --black : #242D49;
+    --gray : #788097;
+    --blueCard : #DDF8FE;
+    --purple: rgb(151, 15, 236);
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    /* --orangeCard: rgba(230, 252, 31, 0.45); */
+    --orangeCard: rgba(252, 108, 31, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+    --font-main: 'Roboto', sans-serif;
+    --font-para: 'Nunito', sans-serif;
+}
+
+.App{
+    padding: 0.5rem 3.5rem;
+    overflow: hidden;
+    color: var(--black);   
+}
+
+.btn{
+  background: var(--orange);
+  border: 2px solid var(--orange);
+    border-radius: 10px;
+    padding: 0.5rem 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover{
+  background: white;
+    color: var(--black);
+}
+
+
+  
+
+  
